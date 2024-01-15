@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { CustomButton, Hero } from '@/components'
+import { CustomButton, Hero, SearchBar } from '@/components'
+import CustomFilter from '@/components/CustomFiltre'
 
 export default function Home() {
   return (
@@ -10,6 +11,14 @@ export default function Home() {
 <h1 className='text-4xl font-extrabold' > Car Catalogue </h1>
 <p> Explore the cars you might like </p>
       </div>
+      <div className='home__filters'> 
+      <SearchBar/>
+      <div className='home__filter-container'> 
+      <CustomFilter title='fuel'/> 
+      <CustomFilter title='year'/> 
+
+      </div>
+       </div>
       
     </main>
   )
