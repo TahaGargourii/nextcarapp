@@ -12,9 +12,9 @@ const SearchBar = () => {
 
 
   return (
-    <form className='SearchBar' onSubmit={handleSearch}> 
+    <form className='Searchbar' onSubmit={handleSearch}> 
     
-    <div className='searchbar_  _item'>
+    <div className='searchbar__item'>
 
       <SearchManufacturer 
       manufacturer={manufacturer} 
